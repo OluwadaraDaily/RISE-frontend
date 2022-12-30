@@ -2,12 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## CI/CD Badges
-
-![CI/CD](https://github.com/oluwadaradaily/rise-frontend/workflows/React-CI/CD/badge.svg)
-
-[![codecov](https://codecov.io/gh/oluwadaradaily/rise-frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/oluwadaradaily/rise-frontend)
-
 ## Available Scripts
 
 In the project directory, you can run:
