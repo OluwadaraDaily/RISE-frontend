@@ -1,0 +1,25 @@
+.main-layout {
+  height: 100%;
+}
+.info-text-section {
+  max-width: 800px;
+  height: 100%;
+  margin: auto auto;
+  text-align: center;
+  margin-top: 100px;
+  h1 {
+    color: #867F7F;
+    margin: 0
+  }
+
+  p.text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+}
+
+main {
+  height: 100%;
+}

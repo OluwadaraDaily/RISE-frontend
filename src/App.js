@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import './App.css';
+
+// Layouts
+import MainLayout from './layouts/MainLayout/MainLayout';
+
+// Pages
+import Home from './pages/Home/Home';
+import AboutUs from './pages/Home/AboutUs/AboutUs';
+import Settings from './pages/Home/Settings/Settings';
+import HowItWorks from './pages/Home/HowItWorks/HowItWorks';
+import ImageProcessingLayout from './layouts/ImageProcessingLayout/ImageProcessingLayout';
+import UploadImage from './pages/ImageProcessing/UploadImage/UploadImage';
+import LandingPageLayout from './layouts/LandingPageLayout/LandingPageLayout';
+
+// Create a browser router with layouts and pages under that layout
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout/>}>
+      <Route path="" element={<LandingPageLayout/>}>
+        <Route index element={ <Home/> } />
+        <Route path="about-us" element={ <AboutUs/> } />
+        <Route path="settings" element={ <Settings/> } />
+        <Route path="how-it-works" element={ <HowItWorks/> } />
+      </Route>
+      <Route path='image' element={ <ImageProcessingLayout/> }>
+        <Route path='upload' element={<UploadImage/>}/>
+      </Route>
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
