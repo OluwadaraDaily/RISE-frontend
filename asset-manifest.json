@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rise-app/static/css/main.e9cd16df.css",
+    "main.js": "/rise-app/static/js/main.e9d62be1.js",
+    "static/js/787.8336f165.chunk.js": "/rise-app/static/js/787.8336f165.chunk.js",
+    "static/media/NexaDemo-Bold.ttf": "/rise-app/static/media/NexaDemo-Bold.e3837350fe39d9d30264.ttf",
+    "static/media/NexaDemo-Light.ttf": "/rise-app/static/media/NexaDemo-Light.f5677e04ea4c10ffda20.ttf",
+    "index.html": "/rise-app/index.html",
+    "main.e9cd16df.css.map": "/rise-app/static/css/main.e9cd16df.css.map",
+    "main.e9d62be1.js.map": "/rise-app/static/js/main.e9d62be1.js.map",
+    "787.8336f165.chunk.js.map": "/rise-app/static/js/787.8336f165.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9cd16df.css",
+    "static/js/main.e9d62be1.js"
+  ]
+}
